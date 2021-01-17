@@ -1,6 +1,6 @@
 library("tidyverse") # Instead of "tidyverse", you can use"ggplot2"
 
-gplot('dataframe', aes(x = 'x', y = 'y')) + # X= Horizontal axis, y = Vertical axis
+ggplot('dataframe', aes(x = 'x', y = 'y')) + # X= Horizontal axis, y = Vertical axis
   geom_smooth(method = "lm", se = FALSE) +　#Regression line
   labs(x = "x_lab", y = "y_lab", title = "title") + # labels
   geom_hline(yintercept = c(0, 1), color = "gray") + # horizonal line
